@@ -86,8 +86,6 @@
 		4038E8B6286DCED000C4BC5B = {
 			isa = PBXGroup;
 			children = (
-				4038E8F5286F5C7A00C4BC5B /* EmojiRatingView.swift */,
-				4038E8F3286F596000C4BC5B /* RatingView.swift */,
 				4038E8C1286DCED000C4BC5B /* Bookworm */,
 				4038E8D2286DCED300C4BC5B /* BookwormTests */,
 				4038E8DC286DCED300C4BC5B /* BookwormUITests */,
@@ -108,6 +106,8 @@
 		4038E8C1286DCED000C4BC5B /* Bookworm */ = {
 			isa = PBXGroup;
 			children = (
+				4038E8F5286F5C7A00C4BC5B /* EmojiRatingView.swift */,
+				4038E8F3286F596000C4BC5B /* RatingView.swift */,
 				4038E8C2286DCED000C4BC5B /* BookwormApp.swift */,
 				4038E8C4286DCED000C4BC5B /* ContentView.swift */,
 				4038E8EC286DDA6200C4BC5B /* Bookworm.xcdatamodeld */,

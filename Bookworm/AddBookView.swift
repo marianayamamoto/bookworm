@@ -54,10 +54,15 @@ struct AddBookView: View {
                         try? moc.save()
                         dismiss()
                     }
+                    .disabled(isFormInvalid())
                 }
             }
             .navigationTitle("Add Book")
         }
+    }
+
+    func isFormInvalid() -> Bool {
+        return title.isEmpty || author.isEmpty || genre.isEmpty
     }
 }
 
