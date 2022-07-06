@@ -14,6 +14,15 @@ struct DetailView: View {
     @Environment(\.dismiss) var dismiss
     @State private var showingDeleteAlert = false
 
+    var dateString: String {
+        guard let date = book.date else {
+            return ""
+        }
+        let formatter1 = DateFormatter()
+        formatter1.dateStyle = .full
+        return formatter1.string(from: date)
+    }
+
     var body: some View {
         ScrollView {
             ZStack(alignment: .bottomTrailing) {
@@ -34,6 +43,9 @@ struct DetailView: View {
             Text(book.author ?? "Unknown Author")
                 .font(.title)
                 .foregroundColor(.secondary)
+
+            Text(dateString)
+                .font(.subheadline)
 
             Text(book.review ?? "No Review")
                 .padding()
